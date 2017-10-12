@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: kibana-logging
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        component: kibana-logging
+    spec:
+      containers:
+      - name: kibana-logging
+        image: quay.io/samsung_cnct/kibana-container
+        resources:
+          # keep request = limit to keep this container in guaranteed class
+          limits:
+            cpu: 100m
+          requests:
+            cpu: 100m
+        env:
+          - name: "ELASTICSEARCH_URL"
+            value: "http://elasticsearch:9200"
+        ports:
+        - containerPort: 5601
+          name: ui
+          protocol: TCP
