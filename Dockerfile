@@ -3,9 +3,9 @@ FROM ubuntu:16.04
 # add our user and group first to make sure their IDs get assigned consistently
 RUN groupadd -r kibana && useradd -r -m -g kibana kibana
 
-RUN buildDeps='apt-transport-https 
-			libfontconfig 
-			libfreetype6
+RUN buildDeps='apt-transport-https \
+			libfontconfig \
+			libfreetype6 \
 			wget' && \
     apt-get -qq update && \
     apt-get install -y -qq $buildDeps ca-certificates --no-install-recommends && \
