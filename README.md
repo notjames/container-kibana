@@ -1,4 +1,4 @@
-[![pipeline status](https://git.cnct.io/common-tools/samsung-cnct.container-kibana/badges/master/pipeline.svg)](https://git.cnct.io/common-tools/samsung-cnct.container-kibana/commits/master)
+[![pipeline status](https://git.cnct.io/common-tools/samsung-cnct_container-kibana/badges/master/pipeline.svg)](https://git.cnct.io/common-tools/samsung-cnct.container-kibana/commits/master)
 
 # Kibana Application for data visualization in Kubernetes logging
 
