@@ -14,7 +14,7 @@ variables:
   REGISTRY: quay.io
   IMAGE_NAME: kibana-container
   REGISTRY_USER: your_org # we set this to override to samsung_cnct in gitlab Group Variables
-  ROBOT_ACCOUNT: kibana-container_rw
+  ROBOT_ACCOUNT: kibana_container_rw
 # Create a Gitlab Secret Variable called REGISTRY_PASSWORD and assign it the value of the registry robot docker login password.
 # DO NOT PASTE THIS PASSWORD HERE.
 
